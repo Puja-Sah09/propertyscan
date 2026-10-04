@@ -1,0 +1,273 @@
+{
+  "rooms": [
+    {
+      "name": "living",
+      "ceiling_height_m": 2.44,
+      "floor_area_m2": 20.0,
+      "centroid_m": [
+        2.5,
+        2.0
+      ],
+      "polygon_m": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          5.0,
+          0.0
+        ],
+        [
+          5.0,
+          4.0
+        ],
+        [
+          0.0,
+          4.0
+        ]
+      ],
+      "walls": [
+        {
+          "id": "south",
+          "length_m": 5.0,
+          "angle_deg": 0.0,
+          "openings": []
+        },
+        {
+          "id": "east",
+          "length_m": 4.0,
+          "angle_deg": 90.0,
+          "openings": [
+            {
+              "kind": "door",
+              "width_m": 0.8
+            }
+          ]
+        },
+        {
+          "id": "north",
+          "length_m": 5.0,
+          "angle_deg": 180.0,
+          "openings": []
+        },
+        {
+          "id": "west",
+          "length_m": 4.0,
+          "angle_deg": -90.0,
+          "openings": []
+        }
+      ]
+    },
+    {
+      "name": "hall",
+      "ceiling_height_m": 2.44,
+      "floor_area_m2": 4.8,
+      "centroid_m": [
+        5.6,
+        3.2
+      ],
+      "polygon_m": [
+        [
+          5.0,
+          1.2
+        ],
+        [
+          6.2,
+          1.2
+        ],
+        [
+          6.2,
+          5.2
+        ],
+        [
+          5.0,
+          5.2
+        ]
+      ],
+      "walls": [
+        {
+          "id": "south",
+          "length_m": 1.2000000000000002,
+          "angle_deg": 0.0,
+          "openings": []
+        },
+        {
+          "id": "east",
+          "length_m": 4.0,
+          "angle_deg": 90.0,
+          "openings": [
+            {
+              "kind": "door",
+              "width_m": 0.9
+            }
+          ]
+        },
+        {
+          "id": "north",
+          "length_m": 1.2000000000000002,
+          "angle_deg": 180.0,
+          "openings": [
+            {
+              "kind": "door",
+              "width_m": 0.8
+            }
+          ]
+        },
+        {
+          "id": "west",
+          "length_m": 4.0,
+          "angle_deg": -90.0,
+          "openings": [
+            {
+              "kind": "door",
+              "width_m": 0.8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "kitchen",
+      "ceiling_height_m": 2.44,
+      "floor_area_m2": 12.25,
+      "centroid_m": [
+        7.949999999999999,
+        2.95
+      ],
+      "polygon_m": [
+        [
+          6.2,
+          1.2
+        ],
+        [
+          9.7,
+          1.2
+        ],
+        [
+          9.7,
+          4.7
+        ],
+        [
+          6.2,
+          4.7
+        ]
+      ],
+      "walls": [
+        {
+          "id": "south",
+          "length_m": 3.499999999999999,
+          "angle_deg": 0.0,
+          "openings": []
+        },
+        {
+          "id": "east",
+          "length_m": 3.5,
+          "angle_deg": 90.0,
+          "openings": []
+        },
+        {
+          "id": "north",
+          "length_m": 3.499999999999999,
+          "angle_deg": 180.0,
+          "openings": []
+        },
+        {
+          "id": "west",
+          "length_m": 3.5,
+          "angle_deg": -90.0,
+          "openings": [
+            {
+              "kind": "door",
+              "width_m": 0.9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "bedroom",
+      "ceiling_height_m": 2.47,
+      "floor_area_m2": 15.96,
+      "centroid_m": [
+        6.9,
+        7.300000000000001
+      ],
+      "polygon_m": [
+        [
+          5.0,
+          5.2
+        ],
+        [
+          8.8,
+          5.2
+        ],
+        [
+          8.8,
+          9.4
+        ],
+        [
+          5.0,
+          9.4
+        ]
+      ],
+      "walls": [
+        {
+          "id": "south",
+          "length_m": 3.8000000000000007,
+          "angle_deg": 0.0,
+          "openings": [
+            {
+              "kind": "door",
+              "width_m": 0.8
+            }
+          ]
+        },
+        {
+          "id": "east",
+          "length_m": 4.2,
+          "angle_deg": 90.0,
+          "openings": []
+        },
+        {
+          "id": "north",
+          "length_m": 3.8000000000000007,
+          "angle_deg": 180.0,
+          "openings": []
+        },
+        {
+          "id": "west",
+          "length_m": 4.2,
+          "angle_deg": -90.0,
+          "openings": []
+        }
+      ]
+    }
+  ],
+  "adjacency": [
+    [
+      "living",
+      "hall"
+    ],
+    [
+      "hall",
+      "kitchen"
+    ],
+    [
+      "hall",
+      "bedroom"
+    ]
+  ],
+  "footprint_area_m2": 53.01,
+  "damages": [
+    {
+      "room": "living",
+      "klass": "water_stain",
+      "area_m2": 0.27
+    },
+    {
+      "room": "living",
+      "klass": "crack",
+      "length_m": 0.9
+    }
+  ]
+}

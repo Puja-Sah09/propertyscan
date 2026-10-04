@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "capture_id": "video",
+  "tier": "video",
+  "device": {
+    "model": "synthetic-raycast",
+    "tier": "video"
+  },
+  "rooms": [
+    {
+      "id": "room-1",
+      "name": "room-1",
+      "ceiling_height_m": {
+        "value": 0.0,
+        "ci95": [
+          -0.08,
+          0.08
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 5.624,
+        "ci95": [
+          5.2866,
+          5.9614
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          1.195,
+          0.7147
+        ],
+        [
+          -0.405,
+          1.5147
+        ],
+        [
+          0.395,
+          6.3547
+        ],
+        [
+          1.595,
+          1.4747
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-1:wall-1",
+          "length_m": {
+            "value": 1.7889,
+            "ci95": [
+              1.7352,
+              1.8425
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-2",
+          "length_m": {
+            "value": 4.9057,
+            "ci95": [
+              4.7585,
+              5.0528
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-3",
+          "length_m": {
+            "value": 5.0254,
+            "ci95": [
+              4.8746,
+              5.1761
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-2-251",
+              "kind": "opening",
+              "width_m": {
+                "value": 5.0254,
+                "ci95": [
+                  4.9654,
+                  5.0854
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-1:wall-4",
+          "length_m": {
+            "value": 0.8588,
+            "ci95": [
+              0.8331,
+              0.8846
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-3-42",
+              "kind": "door",
+              "width_m": {
+                "value": 0.8588,
+                "ci95": [
+                  0.7988,
+                  0.9188
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "stitch": {
+    "adjacency": [],
+    "room_count": 1,
+    "footprint_area_m2": {
+      "value": 5.624,
+      "ci95": [
+        5.474,
+        5.774
+      ],
+      "unit": "m2"
+    },
+    "overlaps": false,
+    "overlap_area_m2": 0.0
+  },
+  "damages": [],
+  "concealed_flags": [],
+  "scope_items": [],
+  "drift": {
+    "method": "sheet_pnp_ground_plane_rejected",
+    "loop_closures": 0,
+    "used_raw_poses_as_is": false,
+    "sheet_fixes": 1,
+    "correction_applied": false
+  }
+}

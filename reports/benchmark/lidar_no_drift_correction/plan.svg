@@ -1,0 +1,33 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='860' height='838' viewBox='0 0 860.0 837.7'>
+<rect width='100%' height='100%' fill='#f7f5f2'/>
+<text x='70' y='32' font-family='Georgia, serif' font-size='20' fill='#1c1917'>lidar_no_drift_correction · lidar</text>
+<path d='M 70.0 767.7 L 441.1 767.7 L 441.1 470.8 L 70.0 470.8 Z' fill='#efeae2' stroke='#292524' stroke-width='3' stroke-linejoin='round'/>
+<text x='255.6' y='619.3' text-anchor='middle' font-family='Calibri, sans-serif' font-size='14' fill='#44403c'>room-1</text>
+<text x='255.6' y='635.3' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#78716c'>20.00 m² · h 2.442 m</text>
+<text x='255.6' y='767.7' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>5.00 m</text>
+<text x='441.1' y='619.3' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>4.00 m</text>
+<text x='255.6' y='470.8' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>5.00 m</text>
+<text x='70.0' y='619.3' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>4.00 m</text>
+<path d='M 441.1 678.7 L 530.2 678.7 L 530.2 381.8 L 441.1 381.8 Z' fill='#efeae2' stroke='#292524' stroke-width='3' stroke-linejoin='round'/>
+<text x='485.7' y='530.2' text-anchor='middle' font-family='Calibri, sans-serif' font-size='14' fill='#44403c'>room-2</text>
+<text x='485.7' y='546.2' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#78716c'>4.80 m² · h 2.442 m</text>
+<text x='485.7' y='678.7' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>1.20 m</text>
+<text x='530.2' y='530.2' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>4.00 m</text>
+<text x='485.7' y='381.8' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>1.20 m</text>
+<text x='441.1' y='530.2' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>4.00 m</text>
+<path d='M 530.2 678.7 L 790.0 678.7 L 790.0 418.9 L 530.2 418.9 Z' fill='#efeae2' stroke='#292524' stroke-width='3' stroke-linejoin='round'/>
+<text x='660.1' y='548.8' text-anchor='middle' font-family='Calibri, sans-serif' font-size='14' fill='#44403c'>room-3</text>
+<text x='660.1' y='564.8' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#78716c'>12.25 m² · h 2.442 m</text>
+<text x='660.1' y='678.7' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>3.50 m</text>
+<text x='790.0' y='548.8' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>3.50 m</text>
+<text x='660.1' y='418.9' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>3.50 m</text>
+<text x='530.2' y='548.8' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>3.50 m</text>
+<path d='M 441.1 381.8 L 723.2 381.8 L 723.2 70.0 L 441.1 70.0 Z' fill='#efeae2' stroke='#292524' stroke-width='3' stroke-linejoin='round'/>
+<text x='582.2' y='225.9' text-anchor='middle' font-family='Calibri, sans-serif' font-size='14' fill='#44403c'>room-4</text>
+<text x='582.2' y='241.9' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#78716c'>15.96 m² · h 2.472 m</text>
+<text x='582.2' y='381.8' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>3.80 m</text>
+<text x='723.2' y='225.9' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>4.20 m</text>
+<text x='582.2' y='70.0' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>3.80 m</text>
+<text x='441.1' y='225.9' text-anchor='middle' font-family='Calibri, sans-serif' font-size='11' fill='#1c1917'>4.20 m</text>
+<text x='70' y='814' font-family='Calibri, sans-serif' font-size='12' fill='#57534e'>drift: poses_used_as_is · loops 0</text>
+</svg>

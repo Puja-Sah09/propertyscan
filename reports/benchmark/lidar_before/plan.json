@@ -1,0 +1,1228 @@
+{
+  "schema_version": "1.0.0",
+  "capture_id": "lidar_before",
+  "tier": "lidar",
+  "device": {
+    "model": "synthetic-raycast",
+    "tier": "lidar"
+  },
+  "rooms": [
+    {
+      "id": "room-1",
+      "name": "room-1",
+      "ceiling_height_m": {
+        "value": 2.4515,
+        "ci95": [
+          2.4335,
+          2.4695
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 19.9944,
+        "ci95": [
+          19.5945,
+          20.3943
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          0.0005,
+          0.0003
+        ],
+        [
+          4.9998,
+          0.0005
+        ],
+        [
+          5.0003,
+          3.9996
+        ],
+        [
+          0.0005,
+          3.9995
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-1:wall-1",
+          "length_m": {
+            "value": 4.9994,
+            "ci95": [
+              4.9794,
+              5.0194
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-2",
+          "length_m": {
+            "value": 3.9992,
+            "ci95": [
+              3.9832,
+              4.0152
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-0--187",
+              "kind": "door",
+              "width_m": {
+                "value": 0.8054,
+                "ci95": [
+                  0.7934,
+                  0.8174
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-1:wall-3",
+          "length_m": {
+            "value": 4.9998,
+            "ci95": [
+              4.9798,
+              5.0198
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-4",
+          "length_m": {
+            "value": 3.9992,
+            "ci95": [
+              3.9832,
+              4.0152
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
+    },
+    {
+      "id": "room-2",
+      "name": "room-2",
+      "ceiling_height_m": {
+        "value": 2.4552,
+        "ci95": [
+          2.4372,
+          2.4732
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 4.7972,
+        "ci95": [
+          4.7013,
+          4.8932
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          5.0,
+          1.2006
+        ],
+        [
+          6.1996,
+          1.2005
+        ],
+        [
+          6.1999,
+          5.2001
+        ],
+        [
+          5.0005,
+          5.1999
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-2:wall-1",
+          "length_m": {
+            "value": 1.1996,
+            "ci95": [
+              1.1846,
+              1.2146
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-2:wall-2",
+          "length_m": {
+            "value": 3.9996,
+            "ci95": [
+              3.9836,
+              4.0156
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-1--28",
+              "kind": "door",
+              "width_m": {
+                "value": 0.9039,
+                "ci95": [
+                  0.8919,
+                  0.9159
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-2:wall-3",
+          "length_m": {
+            "value": 1.1994,
+            "ci95": [
+              1.1844,
+              1.2144
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-3--120",
+              "kind": "door",
+              "width_m": {
+                "value": 0.804,
+                "ci95": [
+                  0.792,
+                  0.816
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-2:wall-4",
+          "length_m": {
+            "value": 3.9993,
+            "ci95": [
+              3.9833,
+              4.0153
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-0--187",
+              "kind": "door",
+              "width_m": {
+                "value": 0.8054,
+                "ci95": [
+                  0.7934,
+                  0.8174
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "room-3",
+      "name": "room-3",
+      "ceiling_height_m": {
+        "value": 2.4522,
+        "ci95": [
+          2.4342,
+          2.4702
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 12.2454,
+        "ci95": [
+          12.0005,
+          12.4903
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          6.1996,
+          1.2005
+        ],
+        [
+          9.6992,
+          1.2003
+        ],
+        [
+          9.6995,
+          4.6996
+        ],
+        [
+          6.1998,
+          4.6994
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-3:wall-1",
+          "length_m": {
+            "value": 3.4996,
+            "ci95": [
+              3.4846,
+              3.5146
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-2",
+          "length_m": {
+            "value": 3.4993,
+            "ci95": [
+              3.4843,
+              3.5143
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-3",
+          "length_m": {
+            "value": 3.4997,
+            "ci95": [
+              3.4847,
+              3.5147
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-4",
+          "length_m": {
+            "value": 3.4988,
+            "ci95": [
+              3.4838,
+              3.5138
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-0--28",
+              "kind": "door",
+              "width_m": {
+                "value": 0.9039,
+                "ci95": [
+                  0.8919,
+                  0.9159
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "room-4",
+      "name": "room-4",
+      "ceiling_height_m": {
+        "value": 2.4838,
+        "ci95": [
+          2.4658,
+          2.5018
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 15.9522,
+        "ci95": [
+          15.6331,
+          16.2712
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          5.0005,
+          5.1999
+        ],
+        [
+          8.7996,
+          5.2005
+        ],
+        [
+          8.7994,
+          9.3996
+        ],
+        [
+          5.001,
+          9.3994
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-4:wall-1",
+          "length_m": {
+            "value": 3.7991,
+            "ci95": [
+              3.7839,
+              3.8143
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-4--120",
+              "kind": "door",
+              "width_m": {
+                "value": 0.804,
+                "ci95": [
+                  0.792,
+                  0.816
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-4:wall-2",
+          "length_m": {
+            "value": 4.199,
+            "ci95": [
+              4.1822,
+              4.2158
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-4:wall-3",
+          "length_m": {
+            "value": 3.7984,
+            "ci95": [
+              3.7832,
+              3.8136
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-4:wall-4",
+          "length_m": {
+            "value": 4.1995,
+            "ci95": [
+              4.1827,
+              4.2163
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
+    }
+  ],
+  "stitch": {
+    "adjacency": [
+      [
+        "room-1",
+        "room-2"
+      ],
+      [
+        "room-2",
+        "room-3"
+      ],
+      [
+        "room-2",
+        "room-4"
+      ]
+    ],
+    "room_count": 4,
+    "footprint_area_m2": {
+      "value": 52.9892,
+      "ci95": [
+        52.8392,
+        53.1392
+      ],
+      "unit": "m2"
+    },
+    "overlaps": false,
+    "overlap_area_m2": 0.0
+  },
+  "damages": [
+    {
+      "id": "DMG-001",
+      "room_id": "room-1",
+      "surface_id": "room-1:wall-1",
+      "class": "crack",
+      "area_m2": 0.057,
+      "length_m": 1.04,
+      "width_m": 0.1,
+      "centroid_xyz": [
+        4.976,
+        0.002,
+        1.016
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-002",
+      "room_id": "room-1",
+      "surface_id": "room-1:wall-1",
+      "class": "hole",
+      "area_m2": 0.014,
+      "length_m": 0.04,
+      "width_m": 0.48,
+      "centroid_xyz": [
+        5.027,
+        3.09,
+        -0.014
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-003",
+      "room_id": "room-1",
+      "surface_id": "room-1:wall-1",
+      "class": "crack",
+      "area_m2": 0.011,
+      "length_m": 0.28,
+      "width_m": 0.02,
+      "centroid_xyz": [
+        5.02,
+        9.4,
+        1.786
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-004",
+      "room_id": "room-1",
+      "surface_id": "room-1:wall-1",
+      "class": "crack",
+      "area_m2": 0.02,
+      "length_m": 0.52,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        5.026,
+        9.399,
+        2.196
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-005",
+      "room_id": "room-1",
+      "surface_id": "room-1:wall-4",
+      "class": "crack",
+      "area_m2": 0.051,
+      "length_m": 1.16,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        0.0,
+        1.214,
+        0.97
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-006",
+      "room_id": "room-1",
+      "surface_id": "room-1:wall-4",
+      "class": "crack",
+      "area_m2": 0.018,
+      "length_m": 0.5,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        2.201,
+        1.185,
+        0.5
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-007",
+      "room_id": "room-2",
+      "surface_id": "room-2:wall-1",
+      "class": "crack",
+      "area_m2": 0.057,
+      "length_m": 1.04,
+      "width_m": 0.1,
+      "centroid_xyz": [
+        4.976,
+        0.002,
+        1.016
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-008",
+      "room_id": "room-2",
+      "surface_id": "room-2:wall-1",
+      "class": "hole",
+      "area_m2": 0.014,
+      "length_m": 0.04,
+      "width_m": 0.48,
+      "centroid_xyz": [
+        5.027,
+        3.09,
+        -0.014
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-009",
+      "room_id": "room-2",
+      "surface_id": "room-2:wall-1",
+      "class": "crack",
+      "area_m2": 0.011,
+      "length_m": 0.28,
+      "width_m": 0.02,
+      "centroid_xyz": [
+        5.02,
+        9.4,
+        1.786
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-010",
+      "room_id": "room-2",
+      "surface_id": "room-2:wall-1",
+      "class": "crack",
+      "area_m2": 0.02,
+      "length_m": 0.52,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        5.026,
+        9.399,
+        2.196
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-011",
+      "room_id": "room-2",
+      "surface_id": "room-2:wall-2",
+      "class": "crack",
+      "area_m2": 0.014,
+      "length_m": 0.26,
+      "width_m": 0.1,
+      "centroid_xyz": [
+        6.212,
+        3.329,
+        0.845
+      ],
+      "max_residual_m": 0.04
+    },
+    {
+      "id": "DMG-012",
+      "room_id": "room-2",
+      "surface_id": "room-2:wall-2",
+      "class": "crack",
+      "area_m2": 0.101,
+      "length_m": 2.38,
+      "width_m": 0.06,
+      "centroid_xyz": [
+        6.212,
+        9.399,
+        1.205
+      ],
+      "max_residual_m": 0.04
+    },
+    {
+      "id": "DMG-013",
+      "room_id": "room-2",
+      "surface_id": "room-2:wall-3",
+      "class": "crack",
+      "area_m2": 0.051,
+      "length_m": 1.16,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        0.0,
+        1.214,
+        0.97
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-014",
+      "room_id": "room-2",
+      "surface_id": "room-2:wall-3",
+      "class": "crack",
+      "area_m2": 0.018,
+      "length_m": 0.5,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        2.201,
+        1.185,
+        0.5
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-015",
+      "room_id": "room-3",
+      "surface_id": "room-3:wall-1",
+      "class": "crack",
+      "area_m2": 0.014,
+      "length_m": 0.26,
+      "width_m": 0.1,
+      "centroid_xyz": [
+        6.212,
+        3.329,
+        0.845
+      ],
+      "max_residual_m": 0.04
+    },
+    {
+      "id": "DMG-016",
+      "room_id": "room-3",
+      "surface_id": "room-3:wall-1",
+      "class": "crack",
+      "area_m2": 0.101,
+      "length_m": 2.38,
+      "width_m": 0.06,
+      "centroid_xyz": [
+        6.212,
+        9.399,
+        1.205
+      ],
+      "max_residual_m": 0.04
+    },
+    {
+      "id": "DMG-017",
+      "room_id": "room-3",
+      "surface_id": "room-3:wall-3",
+      "class": "crack",
+      "area_m2": 0.051,
+      "length_m": 1.16,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        0.0,
+        1.214,
+        0.97
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-018",
+      "room_id": "room-3",
+      "surface_id": "room-3:wall-3",
+      "class": "crack",
+      "area_m2": 0.018,
+      "length_m": 0.5,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        2.201,
+        1.185,
+        0.5
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-019",
+      "room_id": "room-4",
+      "surface_id": "room-4:wall-1",
+      "class": "crack",
+      "area_m2": 0.057,
+      "length_m": 1.04,
+      "width_m": 0.1,
+      "centroid_xyz": [
+        4.976,
+        0.002,
+        1.016
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-020",
+      "room_id": "room-4",
+      "surface_id": "room-4:wall-1",
+      "class": "hole",
+      "area_m2": 0.014,
+      "length_m": 0.04,
+      "width_m": 0.48,
+      "centroid_xyz": [
+        5.027,
+        3.09,
+        -0.014
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-021",
+      "room_id": "room-4",
+      "surface_id": "room-4:wall-1",
+      "class": "crack",
+      "area_m2": 0.011,
+      "length_m": 0.28,
+      "width_m": 0.02,
+      "centroid_xyz": [
+        5.02,
+        9.4,
+        1.786
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-022",
+      "room_id": "room-4",
+      "surface_id": "room-4:wall-1",
+      "class": "crack",
+      "area_m2": 0.02,
+      "length_m": 0.52,
+      "width_m": 0.04,
+      "centroid_xyz": [
+        5.026,
+        9.399,
+        2.196
+      ],
+      "max_residual_m": 0.0401
+    },
+    {
+      "id": "DMG-023",
+      "room_id": "room-4",
+      "surface_id": "room-4:wall-2",
+      "class": "crack",
+      "area_m2": 0.014,
+      "length_m": 0.26,
+      "width_m": 0.1,
+      "centroid_xyz": [
+        6.212,
+        3.329,
+        0.845
+      ],
+      "max_residual_m": 0.04
+    },
+    {
+      "id": "DMG-024",
+      "room_id": "room-4",
+      "surface_id": "room-4:wall-2",
+      "class": "crack",
+      "area_m2": 0.101,
+      "length_m": 2.38,
+      "width_m": 0.06,
+      "centroid_xyz": [
+        6.212,
+        9.399,
+        1.205
+      ],
+      "max_residual_m": 0.04
+    },
+    {
+      "id": "DMG-025",
+      "room_id": "room-4",
+      "surface_id": "room-4:wall-3",
+      "class": "crack",
+      "area_m2": 0.046,
+      "length_m": 1.04,
+      "width_m": 0.06,
+      "centroid_xyz": [
+        8.812,
+        4.699,
+        0.987
+      ],
+      "max_residual_m": 0.04
+    }
+  ],
+  "concealed_flags": [
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-1:wall-1",
+      "damage_id": "DMG-001",
+      "evidence": "Crack length 1.04 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-1:wall-1",
+      "damage_id": "DMG-004",
+      "evidence": "Crack length 0.52 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-1:wall-4",
+      "damage_id": "DMG-005",
+      "evidence": "Crack length 1.16 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-1:wall-4",
+      "damage_id": "DMG-006",
+      "evidence": "Crack length 0.50 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-2:wall-1",
+      "damage_id": "DMG-007",
+      "evidence": "Crack length 1.04 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-2:wall-1",
+      "damage_id": "DMG-010",
+      "evidence": "Crack length 0.52 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-2:wall-2",
+      "damage_id": "DMG-012",
+      "evidence": "Crack length 2.38 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-2:wall-3",
+      "damage_id": "DMG-013",
+      "evidence": "Crack length 1.16 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-2:wall-3",
+      "damage_id": "DMG-014",
+      "evidence": "Crack length 0.50 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-3:wall-1",
+      "damage_id": "DMG-016",
+      "evidence": "Crack length 2.38 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-3:wall-3",
+      "damage_id": "DMG-017",
+      "evidence": "Crack length 1.16 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-3:wall-3",
+      "damage_id": "DMG-018",
+      "evidence": "Crack length 0.50 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-4:wall-1",
+      "damage_id": "DMG-019",
+      "evidence": "Crack length 1.04 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-4:wall-1",
+      "damage_id": "DMG-022",
+      "evidence": "Crack length 0.52 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-4:wall-2",
+      "damage_id": "DMG-024",
+      "evidence": "Crack length 2.38 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    },
+    {
+      "rule_id": "R_SUBSTRATE_SPLIT",
+      "surface_id": "room-4:wall-3",
+      "damage_id": "DMG-025",
+      "evidence": "Crack length 1.04 m and plane residual 40 mm. The split is in the substrate, not a hairline in the paint."
+    }
+  ],
+  "scope_items": [
+    {
+      "id": "SC-001",
+      "surface_id": "room-1:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 1.04,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-001"
+      ]
+    },
+    {
+      "id": "SC-002",
+      "surface_id": "room-1:wall-1",
+      "action_code": "PT-PATCH",
+      "action": "Patch substrate, tape, skim, and paint",
+      "qty": 0.014,
+      "unit": "m2",
+      "damage_ids": [
+        "DMG-002"
+      ]
+    },
+    {
+      "id": "SC-003",
+      "surface_id": "room-1:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.28,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-003"
+      ]
+    },
+    {
+      "id": "SC-004",
+      "surface_id": "room-1:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.52,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-004"
+      ]
+    },
+    {
+      "id": "SC-005",
+      "surface_id": "room-1:wall-4",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 1.16,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-005"
+      ]
+    },
+    {
+      "id": "SC-006",
+      "surface_id": "room-1:wall-4",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.5,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-006"
+      ]
+    },
+    {
+      "id": "SC-007",
+      "surface_id": "room-2:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 1.04,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-007"
+      ]
+    },
+    {
+      "id": "SC-008",
+      "surface_id": "room-2:wall-1",
+      "action_code": "PT-PATCH",
+      "action": "Patch substrate, tape, skim, and paint",
+      "qty": 0.014,
+      "unit": "m2",
+      "damage_ids": [
+        "DMG-008"
+      ]
+    },
+    {
+      "id": "SC-009",
+      "surface_id": "room-2:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.28,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-009"
+      ]
+    },
+    {
+      "id": "SC-010",
+      "surface_id": "room-2:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.52,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-010"
+      ]
+    },
+    {
+      "id": "SC-011",
+      "surface_id": "room-2:wall-2",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.26,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-011"
+      ]
+    },
+    {
+      "id": "SC-012",
+      "surface_id": "room-2:wall-2",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 2.38,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-012"
+      ]
+    },
+    {
+      "id": "SC-013",
+      "surface_id": "room-2:wall-3",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 1.16,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-013"
+      ]
+    },
+    {
+      "id": "SC-014",
+      "surface_id": "room-2:wall-3",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.5,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-014"
+      ]
+    },
+    {
+      "id": "SC-015",
+      "surface_id": "room-3:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.26,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-015"
+      ]
+    },
+    {
+      "id": "SC-016",
+      "surface_id": "room-3:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 2.38,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-016"
+      ]
+    },
+    {
+      "id": "SC-017",
+      "surface_id": "room-3:wall-3",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 1.16,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-017"
+      ]
+    },
+    {
+      "id": "SC-018",
+      "surface_id": "room-3:wall-3",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.5,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-018"
+      ]
+    },
+    {
+      "id": "SC-019",
+      "surface_id": "room-4:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 1.04,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-019"
+      ]
+    },
+    {
+      "id": "SC-020",
+      "surface_id": "room-4:wall-1",
+      "action_code": "PT-PATCH",
+      "action": "Patch substrate, tape, skim, and paint",
+      "qty": 0.014,
+      "unit": "m2",
+      "damage_ids": [
+        "DMG-020"
+      ]
+    },
+    {
+      "id": "SC-021",
+      "surface_id": "room-4:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.28,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-021"
+      ]
+    },
+    {
+      "id": "SC-022",
+      "surface_id": "room-4:wall-1",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.52,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-022"
+      ]
+    },
+    {
+      "id": "SC-023",
+      "surface_id": "room-4:wall-2",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 0.26,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-023"
+      ]
+    },
+    {
+      "id": "SC-024",
+      "surface_id": "room-4:wall-2",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 2.38,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-024"
+      ]
+    },
+    {
+      "id": "SC-025",
+      "surface_id": "room-4:wall-3",
+      "action_code": "CR-SEAL-PAINT",
+      "action": "Seal crack, spot-prime, and repaint",
+      "qty": 1.04,
+      "unit": "m",
+      "damage_ids": [
+        "DMG-025"
+      ]
+    }
+  ],
+  "drift": {
+    "method": "se2_icp_pose_graph_rejected",
+    "loop_closures": 9,
+    "used_raw_poses_as_is": false,
+    "correction_applied": false
+  },
+  "level_mode": "percentile",
+  "ceiling_observed": true
+}

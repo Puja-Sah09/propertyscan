@@ -1,0 +1,781 @@
+{
+  "schema_version": "1.0.0",
+  "capture_id": "single_scan_with_ceiling",
+  "tier": "lidar",
+  "device": {
+    "model": "iPhone LiDAR (Stray Scanner)",
+    "tier": "lidar"
+  },
+  "rooms": [
+    {
+      "id": "room-1",
+      "name": "room-1",
+      "ceiling_height_m": {
+        "value": 3.1071,
+        "ci95": [
+          3.0891,
+          3.1251
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 18.1944,
+        "ci95": [
+          17.8305,
+          18.5583
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          -4.4094,
+          -7.2139
+        ],
+        [
+          -4.0094,
+          -6.5339
+        ],
+        [
+          -3.2494,
+          -7.1339
+        ],
+        [
+          -1.8094,
+          -5.4539
+        ],
+        [
+          -1.0094,
+          -5.7339
+        ],
+        [
+          -1.2494,
+          -6.8539
+        ],
+        [
+          -0.5694,
+          -5.6939
+        ],
+        [
+          -1.1694,
+          -5.0539
+        ],
+        [
+          -0.9294,
+          -4.3739
+        ],
+        [
+          -0.2494,
+          -4.0939
+        ],
+        [
+          0.4306,
+          -4.7739
+        ],
+        [
+          1.9106,
+          -1.9739
+        ],
+        [
+          2.7906,
+          -2.9339
+        ],
+        [
+          4.0706,
+          -3.1339
+        ],
+        [
+          2.7506,
+          -6.2939
+        ],
+        [
+          0.3906,
+          -5.5739
+        ],
+        [
+          -1.6094,
+          -9.2139
+        ],
+        [
+          -3.6094,
+          -7.2539
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-1:wall-1",
+          "length_m": {
+            "value": 0.7889,
+            "ci95": [
+              0.7739,
+              0.8039
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-2",
+          "length_m": {
+            "value": 0.9683,
+            "ci95": [
+              0.9533,
+              0.9833
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-3",
+          "length_m": {
+            "value": 2.2127,
+            "ci95": [
+              2.1977,
+              2.2277
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-4",
+          "length_m": {
+            "value": 0.8476,
+            "ci95": [
+              0.8326,
+              0.8626
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-5",
+          "length_m": {
+            "value": 1.1454,
+            "ci95": [
+              1.1304,
+              1.1604
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-6",
+          "length_m": {
+            "value": 1.3446,
+            "ci95": [
+              1.3296,
+              1.3596
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-7",
+          "length_m": {
+            "value": 0.8773,
+            "ci95": [
+              0.8623,
+              0.8923
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-8",
+          "length_m": {
+            "value": 0.7211,
+            "ci95": [
+              0.7061,
+              0.7361
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-9",
+          "length_m": {
+            "value": 0.7354,
+            "ci95": [
+              0.7204,
+              0.7504
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-10",
+          "length_m": {
+            "value": 0.9617,
+            "ci95": [
+              0.9467,
+              0.9767
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-11",
+          "length_m": {
+            "value": 3.1671,
+            "ci95": [
+              3.1521,
+              3.1821
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-12",
+          "length_m": {
+            "value": 1.3023,
+            "ci95": [
+              1.2873,
+              1.3173
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-13",
+          "length_m": {
+            "value": 1.2955,
+            "ci95": [
+              1.2805,
+              1.3105
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-14",
+          "length_m": {
+            "value": 3.4246,
+            "ci95": [
+              3.4096,
+              3.4396
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-15",
+          "length_m": {
+            "value": 2.4674,
+            "ci95": [
+              2.4524,
+              2.4824
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-16",
+          "length_m": {
+            "value": 4.1533,
+            "ci95": [
+              4.1367,
+              4.1699
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-17",
+          "length_m": {
+            "value": 2.8003,
+            "ci95": [
+              2.7853,
+              2.8153
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-1:wall-18",
+          "length_m": {
+            "value": 0.801,
+            "ci95": [
+              0.786,
+              0.816
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
+    },
+    {
+      "id": "room-2",
+      "name": "room-2",
+      "ceiling_height_m": {
+        "value": 2.3565,
+        "ci95": [
+          2.3385,
+          2.3745
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 3.0528,
+        "ci95": [
+          2.9917,
+          3.1139
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          4.5506,
+          -9.0139
+        ],
+        [
+          3.1506,
+          -8.0539
+        ],
+        [
+          4.0706,
+          -6.7339
+        ],
+        [
+          5.7106,
+          -7.4939
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-2:wall-1",
+          "length_m": {
+            "value": 1.6975,
+            "ci95": [
+              1.6825,
+              1.7125
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-2:wall-2",
+          "length_m": {
+            "value": 1.609,
+            "ci95": [
+              1.594,
+              1.624
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-2:wall-3",
+          "length_m": {
+            "value": 1.8075,
+            "ci95": [
+              1.7925,
+              1.8225
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-2:wall-4",
+          "length_m": {
+            "value": 1.9121,
+            "ci95": [
+              1.8971,
+              1.9271
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
+    },
+    {
+      "id": "room-3",
+      "name": "room-3",
+      "ceiling_height_m": {
+        "value": 3.0931,
+        "ci95": [
+          3.0751,
+          3.1111
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 7.4208,
+        "ci95": [
+          7.2724,
+          7.5692
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          3.3106,
+          -5.7339
+        ],
+        [
+          5.3906,
+          -3.2139
+        ],
+        [
+          7.4706,
+          -4.1739
+        ],
+        [
+          6.3506,
+          -6.4139
+        ],
+        [
+          4.8306,
+          -5.8939
+        ],
+        [
+          4.6706,
+          -6.7739
+        ],
+        [
+          4.1106,
+          -6.4539
+        ],
+        [
+          4.4706,
+          -5.6139
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-3:wall-1",
+          "length_m": {
+            "value": 3.2675,
+            "ci95": [
+              3.2525,
+              3.2825
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-2",
+          "length_m": {
+            "value": 2.2909,
+            "ci95": [
+              2.2759,
+              2.3059
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-3",
+          "length_m": {
+            "value": 2.5044,
+            "ci95": [
+              2.4894,
+              2.5194
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-4",
+          "length_m": {
+            "value": 1.6065,
+            "ci95": [
+              1.5915,
+              1.6215
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-5",
+          "length_m": {
+            "value": 0.8944,
+            "ci95": [
+              0.8794,
+              0.9094
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-6",
+          "length_m": {
+            "value": 0.645,
+            "ci95": [
+              0.63,
+              0.66
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-7",
+          "length_m": {
+            "value": 0.9139,
+            "ci95": [
+              0.8989,
+              0.9289
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-8",
+          "length_m": {
+            "value": 1.1662,
+            "ci95": [
+              1.1512,
+              1.1812
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
+    },
+    {
+      "id": "room-4",
+      "name": "room-4",
+      "ceiling_height_m": {
+        "value": 2.2973,
+        "ci95": [
+          2.2793,
+          2.3153
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 1.4784,
+        "ci95": [
+          1.4284,
+          1.5284
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          -1.7694,
+          -4.5339
+        ],
+        [
+          -2.3294,
+          -3.8539
+        ],
+        [
+          -1.6494,
+          -2.6139
+        ],
+        [
+          -0.7694,
+          -3.5339
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-4:wall-1",
+          "length_m": {
+            "value": 0.8809,
+            "ci95": [
+              0.8659,
+              0.8959
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-4:wall-2",
+          "length_m": {
+            "value": 1.4142,
+            "ci95": [
+              1.3992,
+              1.4292
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-4:wall-3",
+          "length_m": {
+            "value": 1.2731,
+            "ci95": [
+              1.2581,
+              1.2881
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-4:wall-4",
+          "length_m": {
+            "value": 1.4142,
+            "ci95": [
+              1.3992,
+              1.4292
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
+    },
+    {
+      "id": "room-5",
+      "name": "room-5",
+      "ceiling_height_m": {
+        "value": 3.086,
+        "ci95": [
+          3.068,
+          3.104
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 3.0392,
+        "ci95": [
+          2.9784,
+          3.1
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          -0.1294,
+          -1.9339
+        ],
+        [
+          -1.0494,
+          -1.1739
+        ],
+        [
+          0.3106,
+          1.0661
+        ],
+        [
+          1.3506,
+          -0.8939
+        ],
+        [
+          0.3906,
+          -0.8939
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-5:wall-1",
+          "length_m": {
+            "value": 1.1933,
+            "ci95": [
+              1.1783,
+              1.2083
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-5:wall-2",
+          "length_m": {
+            "value": 2.6205,
+            "ci95": [
+              2.6055,
+              2.6355
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-5:wall-3",
+          "length_m": {
+            "value": 2.2188,
+            "ci95": [
+              2.2038,
+              2.2338
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-5:wall-4",
+          "length_m": {
+            "value": 0.96,
+            "ci95": [
+              0.945,
+              0.975
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-5:wall-5",
+          "length_m": {
+            "value": 1.1628,
+            "ci95": [
+              1.1478,
+              1.1778
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
+    }
+  ],
+  "stitch": {
+    "adjacency": [],
+    "room_count": 5,
+    "footprint_area_m2": {
+      "value": 33.1856,
+      "ci95": [
+        33.0356,
+        33.3356
+      ],
+      "unit": "m2"
+    },
+    "overlaps": false,
+    "overlap_area_m2": 0.0
+  },
+  "damages": [],
+  "concealed_flags": [],
+  "scope_items": [],
+  "drift": {
+    "method": "se2_icp_pose_graph_rejected",
+    "loop_closures": 24,
+    "used_raw_poses_as_is": false,
+    "correction_applied": false
+  },
+  "ceiling_observed": true,
+  "runtime_s": 198.18,
+  "propertyscan_version": "1.0.0"
+}
