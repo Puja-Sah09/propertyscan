@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+data/samples/
+data/samples/_cache/
+*.zip
+_*.py
+_mask.png
+out_preview.png
+_sheet.jpg
+_east.jpg
+_east_mask.png
+occ_debug.png
+reports/benchmark/_probe/
+reports/benchmark/_ceil*
+reports/benchmark/video_cloud.npz

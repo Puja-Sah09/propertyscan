@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://propertyscan.local/schema/plan.schema.json",
+  "title": "PropertyScan plan",
+  "type": "object",
+  "required": ["schema_version", "tier", "rooms", "stitch", "damages", "concealed_flags", "scope_items", "drift"],
+  "additionalProperties": true,
+  "properties": {
+    "schema_version": {"type": "string"},
+    "capture_id": {"type": "string"},
+    "tier": {"enum": ["photos", "video", "lidar"]},
+    "device": {"type": "object"},
+    "rooms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "ceiling_height_m", "floor_area_m2", "polygon_m", "walls"],
+        "properties": {
+          "id": {"type": "string"},
+          "name": {"type": "string"},
+          "ceiling_height_m": {"$ref": "#/$defs/measurement"},
+          "floor_area_m2": {"$ref": "#/$defs/measurement"},
+          "polygon_m": {"type": "array", "items": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}}},
+          "walls": {"type": "array"}
+        }
+      }
+    },
+    "stitch": {"type": "object"},
+    "damages": {"type": "array"},
+    "concealed_flags": {"type": "array"},
+    "scope_items": {"type": "array"},
+    "drift": {"type": "object"}
+  },
+  "$defs": {
+    "measurement": {
+      "type": "object",
+      "required": ["value", "ci95", "unit"],
+      "properties": {
+        "value": {"type": "number"},
+        "ci95": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "number"}},
+        "unit": {"type": "string"}
+      }
+    }
+  }
+}
