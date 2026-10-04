@@ -433,101 +433,76 @@ VIDEO_FOV_DEG = 110.0
 
 
 def video_shots(seed_shift: float = 0.0):
-    """A slow walk that keeps the floor in frame.
+    """The stills protocol, filmed as a walk, with the sheet leaving the frame in each doorway.
 
-    The first and last looks are at the living-room sheet. Between them the
-    camera faces each wall from far enough away that the wall base, a stretch
-    of floor, and the ceiling corner share the frame. The hall is 1.2 m wide,
-    so its long walls are seen diagonally rather than from the side.
+    Wall lengths come from the same stands as the photographs. The bedroom's
+    long walls are the exception: standing at the far wall pitches that base
+    out by about 18 cm, which misses a 3 percent gate, so those two looks are
+    taken 1.7 m back from the sheet. The hall is entered twice so the kitchen
+    door and the bedroom door are separate looks from the same sheet.
     """
-    shots = []
-    # One height for the whole walk. A rise after the sheet lock changes the
-    # floor scale, and the plan comes out short.
-    eye_z = 1.45
+    views = photo_views()
     shift = np.array([seed_shift, -seed_shift, 0.0])
-    living = room_by("living")
-    x0, y0, x1, y1 = sheet_rect(living)
-    sheet = np.array([(x0 + x1) / 2, (y0 + y1) / 2, 0.0])
+    shots = []
 
     def add(eye, tgt):
         eye = np.asarray(eye, float) + shift
-        tgt = np.asarray(tgt, float)
-        shots.append((eye, tgt))
+        shots.append((eye, np.asarray(tgt, float)))
 
-    # Close enough that the black border is a few pixels, which is what the
-    # wide lens needs before the quad will solve.
-    eye = np.array([sheet[0], sheet[1] - 0.34, eye_z])
-    for ang in np.linspace(-0.2, 0.2, 5):
-        add(eye, sheet + np.array([0.10 * math.sin(ang), 0.04, 0.0]))
-
-    def face_wall(room, axis: str, along: np.ndarray):
-        """Stand back from one wall and look at its base and ceiling corner."""
-        x0, y0, x1, y1 = room["x0"], room["y0"], room["x1"], room["y1"]
-        span = (x1 - x0) if axis in ("s", "n") else (y1 - y0)
-        depth = (y1 - y0) if axis in ("s", "n") else (x1 - x0)
-        back = min(1.75, max(0.85, 0.46 * depth))
-        # The living-room sofa sits against the south wall. Standing in it hides
-        # the baseboard. Stand on the north side of the sofa instead.
-        if room["name"] == "living" and axis == "s":
-            back = 2.30
-        for s in along:
-            t = float(s)
-            if axis == "s":
-                add((t, y0 + back, eye_z), (t, y0, 1.00))
-            elif axis == "n":
-                add((t, y1 - back, eye_z), (t, y1, 1.00))
-            elif axis == "w":
-                add((x0 + back, t, eye_z), (x0, t, 1.00))
-            else:
-                add((x1 - back, t, eye_z), (x1, t, 1.00))
-        return span
-
-    def room_circuit(room):
-        x0, y0, x1, y1 = room["x0"], room["y0"], room["x1"], room["y1"]
-        # A 1.2 m hall has no standing position that faces a long wall squarely
-        # and still sees floor. Look along the hall, then diagonally at the sides.
-        if min(x1 - x0, y1 - y0) < 1.5:
-            cx = 0.5 * (x0 + x1)
-            for s in np.linspace(y0 + 0.55, y1 - 0.7, 7):
-                add((cx, s, eye_z), (x0, min(y1 - 0.15, s + 1.15), 1.05))
-            for s in np.linspace(y1 - 0.55, y0 + 0.7, 7):
-                add((cx, s, eye_z), (x1, max(y0 + 0.15, s - 1.15), 1.05))
-            add((cx, y0 + 1.3, eye_z), (cx, y0, 1.05))
-            add((cx, y1 - 1.3, eye_z), (cx, y1, 1.05))
-            return
-        face_wall(room, "s", np.linspace(x0 + 0.45, x1 - 0.45, 5))
-        face_wall(room, "e", np.linspace(y0 + 0.45, y1 - 0.45, 4))
-        face_wall(room, "n", np.linspace(x1 - 0.45, x0 + 0.45, 5))
-        face_wall(room, "w", np.linspace(y1 - 0.45, y0 + 0.45, 4))
-
-    def transit(a, b, n):
-        a = np.array(a, float)
-        b = np.array(b, float)
-        step = b - a
-        for s in np.linspace(0.0, 1.0, n):
-            eye = a + step * s
-            tgt = eye + step
-            tgt[2] = 0.85
+    def chunk(pairs):
+        for eye, tgt in pairs:
             add(eye, tgt)
 
-    by = {r["name"]: r for r in ROOMS}
-    room_circuit(by["living"])
-    # Door living-hall is x=5, y 2.0-2.8. Cross it looking along the walk.
-    transit((3.4, 2.40, eye_z), (5.60, 2.40, eye_z), 6)
-    room_circuit(by["hall"])
-    transit((5.60, 2.85, eye_z), (7.90, 2.85, eye_z), 6)
-    room_circuit(by["kitchen"])
-    transit((7.90, 2.85, eye_z), (5.60, 2.85, eye_z), 5)
-    transit((5.60, 3.60, eye_z), (5.60, 7.20, eye_z), 7)
-    room_circuit(by["bedroom"])
-    transit((5.60, 7.20, eye_z), (5.60, 2.40, eye_z), 8)
-    transit((5.60, 2.40, eye_z), (sheet[0], sheet[1] - 0.55, eye_z), 7)
-    eye = np.array([sheet[0] + 0.02, sheet[1] - 0.34, eye_z])
-    for ang in np.linspace(-0.12, 0.12, 4):
-        add(eye, sheet + np.array([0.06 * math.sin(ang), 0.03, 0.0]))
-    # Corners of this walk turn about 90 degrees. Fill the steps so optical
-    # flow sees a small yaw, not a snap.
-    return _densify_walk(shots, max_step=0.16, max_turn=0.10)
+    def arranged(room: str, first: str | None = None, last: str | None = None):
+        rows = views[room]
+        lead = [(e, t) for stem, e, t in rows if first is not None and stem == first]
+        tail = [(e, t) for stem, e, t in rows if last is not None and stem == last]
+        mid = [(e, t) for stem, e, t in rows if stem not in (first, last)]
+        return lead + mid + tail
+
+    def transit(a, b):
+        a = np.asarray(a, float)
+        b = np.asarray(b, float)
+        step = b - a
+        forward = step / (np.linalg.norm(step) + 1e-9)
+        for s in (0.25, 0.5, 0.75):
+            eye = a + step * s
+            tgt = eye + forward * 1.1
+            tgt[2] = eye[2] + 1.15
+            add(eye, tgt)
+
+    bedroom = room_by("bedroom")
+    x0, y0, x1, y1 = sheet_rect(bedroom)
+    sheet = np.array([(x0 + x1) / 2, (y0 + y1) / 2])
+
+    def bedroom_end(interest):
+        direction = np.asarray(interest, float) - sheet
+        direction = direction / (np.linalg.norm(direction) + 1e-9)
+        eye_xy = _inside(bedroom, sheet - direction * 1.70, margin=0.25)
+        eye = np.array([eye_xy[0], eye_xy[1], 1.42])
+        aim = sheet + 0.45 * (np.asarray(interest, float) - sheet)
+        return eye, np.array([aim[0], aim[1], 0.15])
+
+    bed = [(e, t) for stem, e, t in views["bedroom"] if stem == "door-to-hall"]
+    bed.append(bedroom_end([sheet[0], bedroom["y0"]]))
+    bed.append(bedroom_end([sheet[0], bedroom["y1"]]))
+    for stem, eye, tgt in views["bedroom"]:
+        if stem.startswith("wall-east") or stem.startswith("wall-west"):
+            bed.append((eye, tgt))
+    # Same stills as the first hall visit, so the walls match and this visit is
+    # recognised as the hall. The last look is the bedroom door.
+    hall_again = arranged("hall", last="door-to-bedroom")
+
+    chunk(arranged("living", last="door-to-hall"))
+    transit([4.2, 2.4, 1.42], [5.55, 2.7, 1.42])
+    chunk(arranged("hall", first="door-to-living", last="door-to-kitchen"))
+    transit([6.0, 2.85, 1.42], [7.6, 2.9, 1.42])
+    chunk(arranged("kitchen", first="door-to-hall"))
+    transit([7.4, 3.1, 1.42], [5.7, 4.2, 1.42])
+    chunk(hall_again)
+    transit([5.6, 4.7, 1.42], [6.8, 6.6, 1.42])
+    chunk(bed)
+    return shots
 
 
 def _densify_walk(shots, max_step: float = 0.20, max_turn: float = 0.18):

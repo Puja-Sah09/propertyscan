@@ -24,15 +24,15 @@ A scan that never sees a ceiling, which is the floor-only Drive archive and the 
 
 ## Photos and video
 
-Photos have no pose. A US Letter sheet on the floor is the only scale. The long edge is parallel to a wall. Two frames per wall, plus a `door-to-<room>` frame for the stitch. The video tier fixes scale on the sheet, tracks the floor, and treats a second look at the sheet as a loop closure.
+Photos have no pose. A US Letter sheet on the floor is the only scale. The long edge is parallel to a wall. Two frames per wall, plus a `door-to-<room>` frame for the stitch. The video tier does not carry one track across the building: every sheet is the same rectangle, and a dropped frame never gets its step back. Each visit is measured in that room's sheet frame. The sheet leaving the frame for two shots starts the next room. A later visit with the same wall lengths is the same room, and its last look is the doorway into the room that follows.
 
 On the synthetic photo set the four rooms share one frame. The stitch follows the doorway the camera was aimed at, including a door the other room's frame did not pose. Footprint 54.43 m² against 53.01 m², overlap 0, walls inside 8 percent. The bedroom area is 16.67 m² against 15.96 m². A letter sheet a few metres from a wall cannot pin that wall tighter than a few centimetres, so the photo area interval is 5 percent of the area. The ceiling reads 2.40 m against 2.44 m and 2.47 m, inside the 15 cm photo interval. The tape is inside every reported interval.
 
-On the synthetic video walk the scale is the same sheet, and the phone stays at the height that sheet measured. The wide lens keeps the floor in the lower half of the frame. The track still does not hold the building: one 5.62 m² fragment is matched to the living room, two of its sides are near 5 m, and the other two are under 2 m. The ceiling samples do not fall inside that fragment, so the height collapses. It does not meet the 3 percent wall gate. That result is in `reports/benchmark/video_plan/`.
+On the synthetic video the four rooms are in one frame, stitched on those doorway looks. The stands match the photographs, except the bedroom's long walls, which are taken 1.7 m back from the sheet. From the far wall that base landed 18 cm long, outside the 3 percent gate. From 1.7 m it is 4.205 m against 4.200 m. The other walls are inside 3 percent. The worst is the living room's 5.084 m side against 5.000 m. Ceilings read 2.40 m against 2.44 m and 2.47 m, inside the 8 cm video interval. Areas are inside 6 percent. The tape is inside every reported interval. That plan is `reports/benchmark/video_plan/`.
 
 ## Intervals
 
-LiDAR half-widths are 1.5 cm or 0.4 percent on a wall, 1.2 cm on an opening, and 1.8 cm on a ceiling. Photo walls are 4 cm or 8 percent, openings 6 cm, ceilings 15 cm, and the area interval is 5 percent of the area. Video walls are 2 cm or 3 percent and the area interval is 6 percent. When the median grey of a frame is under 25, every interval is multiplied by 1.8. On the synthetic LiDAR plan and the photo plan the tape sits inside every reported interval.
+LiDAR half-widths are 1.5 cm or 0.4 percent on a wall, 1.2 cm on an opening, and 1.8 cm on a ceiling. Photo walls are 4 cm or 8 percent, openings 6 cm, ceilings 15 cm, and the area interval is 5 percent of the area. Video walls are 2 cm or 3 percent, openings 6 cm, ceilings 8 cm, and the area interval is 6 percent. When the median grey of a frame is under 25, every interval is multiplied by 1.8. On the synthetic LiDAR plan, the photo plan, and the video plan the tape sits inside every reported interval.
 
 ## The Drive scans
 
@@ -46,4 +46,4 @@ A framed mirror or a window with no return has no points beyond the glass and no
 
 ## What was not done
 
-magicplan was not installed and no Statistics CSV was exported. `compare` exits 2 rather than invent a column. If a Statistics file is passed later, it compares room areas that are actually in the file and skips blank cells. No iPhone was attached, so the field half of the device matrix is the three archives above plus the ray caster. The video tier does not yet hold the four rooms.
+The three iPhone LiDAR archives above are the field captures. This PC did not record a further walk. magicplan was not installed and no Statistics CSV was exported. `compare` exits 2 rather than invent a column. If a Statistics file is passed later, it compares room areas that are actually in the file. The interior column is `area_without_walls` when that export includes it. Blank cells are skipped.

@@ -11,83 +11,145 @@
       "id": "room-1",
       "name": "room-1",
       "ceiling_height_m": {
-        "value": 0.0,
+        "value": 2.4,
         "ci95": [
-          -0.08,
-          0.08
+          2.32,
+          2.48
         ],
         "unit": "m"
       },
       "floor_area_m2": {
-        "value": 5.624,
+        "value": 20.3309,
         "ci95": [
-          5.2866,
-          5.9614
+          19.1111,
+          21.5508
         ],
         "unit": "m2"
       },
       "polygon_m": [
         [
-          1.195,
-          0.7147
+          -2.5478,
+          -2.0035
         ],
         [
-          -0.405,
-          1.5147
+          2.5358,
+          -2.0035
         ],
         [
-          0.395,
-          6.3547
+          2.5358,
+          1.9958
         ],
         [
-          1.595,
-          1.4747
+          -2.5478,
+          1.9958
         ]
       ],
       "walls": [
         {
           "id": "room-1:wall-1",
           "length_m": {
-            "value": 1.7889,
+            "value": 5.0836,
             "ci95": [
-              1.7352,
-              1.8425
-            ],
-            "unit": "m"
-          },
-          "openings": []
-        },
-        {
-          "id": "room-1:wall-2",
-          "length_m": {
-            "value": 4.9057,
-            "ci95": [
-              4.7585,
-              5.0528
-            ],
-            "unit": "m"
-          },
-          "openings": []
-        },
-        {
-          "id": "room-1:wall-3",
-          "length_m": {
-            "value": 5.0254,
-            "ci95": [
-              4.8746,
-              5.1761
+              4.9311,
+              5.2361
             ],
             "unit": "m"
           },
           "openings": [
             {
-              "id": "op-2-251",
-              "kind": "opening",
+              "id": "op-0-174",
+              "kind": "door",
               "width_m": {
-                "value": 5.0254,
+                "value": 0.92,
                 "ci95": [
-                  4.9654,
-                  5.0854
+                  0.86,
+                  0.98
+                ],
+                "unit": "m"
+              }
+            },
+            {
+              "id": "op-0-255",
+              "kind": "door",
+              "width_m": {
+                "value": 0.58,
+                "ci95": [
+                  0.52,
+                  0.64
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-1:wall-2",
+          "length_m": {
+            "value": 3.9993,
+            "ci95": [
+              3.8793,
+              4.1193
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-1-93",
+              "kind": "door",
+              "width_m": {
+                "value": 0.94,
+                "ci95": [
+                  0.88,
+                  1.0
+                ],
+                "unit": "m"
+              }
+            },
+            {
+              "id": "op-1-246",
+              "kind": "door",
+              "width_m": {
+                "value": 0.9631,
+                "ci95": [
+                  0.9031,
+                  1.0231
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-1:wall-3",
+          "length_m": {
+            "value": 5.0836,
+            "ci95": [
+              4.9311,
+              5.2361
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-2-238",
+              "kind": "door",
+              "width_m": {
+                "value": 0.8,
+                "ci95": [
+                  0.74,
+                  0.86
+                ],
+                "unit": "m"
+              }
+            },
+            {
+              "id": "op-2-321",
+              "kind": "door",
+              "width_m": {
+                "value": 0.66,
+                "ci95": [
+                  0.6,
+                  0.72
                 ],
                 "unit": "m"
               }
@@ -97,22 +159,160 @@
         {
           "id": "room-1:wall-4",
           "length_m": {
-            "value": 0.8588,
+            "value": 3.9993,
             "ci95": [
-              0.8331,
-              0.8846
+              3.8793,
+              4.1193
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
+    },
+    {
+      "id": "room-2",
+      "name": "room-2",
+      "ceiling_height_m": {
+        "value": 2.4,
+        "ci95": [
+          2.32,
+          2.48
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 4.8823,
+        "ci95": [
+          4.5894,
+          5.1752
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          2.5358,
+          -0.6916
+        ],
+        [
+          3.7339,
+          -0.6916
+        ],
+        [
+          3.7339,
+          3.3837
+        ],
+        [
+          2.5358,
+          3.3837
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-2:wall-1",
+          "length_m": {
+            "value": 1.198,
+            "ci95": [
+              1.1621,
+              1.234
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-2:wall-2",
+          "length_m": {
+            "value": 4.0753,
+            "ci95": [
+              3.9531,
+              4.1976
             ],
             "unit": "m"
           },
           "openings": [
             {
-              "id": "op-3-42",
+              "id": "op-1-375",
               "kind": "door",
               "width_m": {
-                "value": 0.8588,
+                "value": 0.6,
                 "ci95": [
-                  0.7988,
-                  0.9188
+                  0.54,
+                  0.66
+                ],
+                "unit": "m"
+              }
+            },
+            {
+              "id": "op-1-103",
+              "kind": "door",
+              "width_m": {
+                "value": 0.8,
+                "ci95": [
+                  0.74,
+                  0.86
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-2:wall-3",
+          "length_m": {
+            "value": 1.198,
+            "ci95": [
+              1.1621,
+              1.234
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-1-375",
+              "kind": "door",
+              "width_m": {
+                "value": 0.6,
+                "ci95": [
+                  0.54,
+                  0.66
+                ],
+                "unit": "m"
+              }
+            },
+            {
+              "id": "op-2-58",
+              "kind": "door",
+              "width_m": {
+                "value": 0.8126,
+                "ci95": [
+                  0.7526,
+                  0.8726
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-2:wall-4",
+          "length_m": {
+            "value": 4.0753,
+            "ci95": [
+              3.9531,
+              4.1976
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-3-292",
+              "kind": "door",
+              "width_m": {
+                "value": 0.5831,
+                "ci95": [
+                  0.5231,
+                  0.6431
                 ],
                 "unit": "m"
               }
@@ -120,16 +320,231 @@
           ]
         }
       ]
+    },
+    {
+      "id": "room-3",
+      "name": "room-3",
+      "ceiling_height_m": {
+        "value": 2.4,
+        "ci95": [
+          2.32,
+          2.48
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 12.5048,
+        "ci95": [
+          11.7545,
+          13.2551
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          3.7339,
+          -1.338
+        ],
+        [
+          7.265,
+          -1.338
+        ],
+        [
+          7.265,
+          2.2033
+        ],
+        [
+          3.7339,
+          2.2033
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-3:wall-1",
+          "length_m": {
+            "value": 3.5311,
+            "ci95": [
+              3.4252,
+              3.6371
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-2",
+          "length_m": {
+            "value": 3.5413,
+            "ci95": [
+              3.4351,
+              3.6475
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-3",
+          "length_m": {
+            "value": 3.5311,
+            "ci95": [
+              3.4252,
+              3.6371
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-3:wall-4",
+          "length_m": {
+            "value": 3.5413,
+            "ci95": [
+              3.4351,
+              3.6475
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-3-186",
+              "kind": "door",
+              "width_m": {
+                "value": 0.9154,
+                "ci95": [
+                  0.8554,
+                  0.9754
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "room-4",
+      "name": "room-4",
+      "ceiling_height_m": {
+        "value": 2.4,
+        "ci95": [
+          2.32,
+          2.48
+        ],
+        "unit": "m"
+      },
+      "floor_area_m2": {
+        "value": 15.9792,
+        "ci95": [
+          15.0205,
+          16.938
+        ],
+        "unit": "m2"
+      },
+      "polygon_m": [
+        [
+          2.5565,
+          3.3837
+        ],
+        [
+          6.3568,
+          3.3837
+        ],
+        [
+          6.3568,
+          7.5885
+        ],
+        [
+          2.5565,
+          7.5885
+        ]
+      ],
+      "walls": [
+        {
+          "id": "room-4:wall-1",
+          "length_m": {
+            "value": 3.8003,
+            "ci95": [
+              3.6863,
+              3.9143
+            ],
+            "unit": "m"
+          },
+          "openings": [
+            {
+              "id": "op-0-58",
+              "kind": "door",
+              "width_m": {
+                "value": 0.8494,
+                "ci95": [
+                  0.7894,
+                  0.9094
+                ],
+                "unit": "m"
+              }
+            }
+          ]
+        },
+        {
+          "id": "room-4:wall-2",
+          "length_m": {
+            "value": 4.2048,
+            "ci95": [
+              4.0786,
+              4.3309
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-4:wall-3",
+          "length_m": {
+            "value": 3.8003,
+            "ci95": [
+              3.6863,
+              3.9143
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        },
+        {
+          "id": "room-4:wall-4",
+          "length_m": {
+            "value": 4.2048,
+            "ci95": [
+              4.0786,
+              4.3309
+            ],
+            "unit": "m"
+          },
+          "openings": []
+        }
+      ]
     }
   ],
   "stitch": {
-    "adjacency": [],
-    "room_count": 1,
+    "adjacency": [
+      [
+        "room-1",
+        "room-2"
+      ],
+      [
+        "room-2",
+        "room-3"
+      ],
+      [
+        "room-2",
+        "room-4"
+      ]
+    ],
+    "room_count": 4,
     "footprint_area_m2": {
-      "value": 5.624,
+      "value": 53.6972,
       "ci95": [
-        5.474,
-        5.774
+        53.5472,
+        53.8472
       ],
       "unit": "m2"
     },
@@ -140,10 +555,10 @@
   "concealed_flags": [],
   "scope_items": [],
   "drift": {
-    "method": "sheet_pnp_ground_plane_rejected",
-    "loop_closures": 0,
+    "method": "sheet_pnp_room_stitch",
+    "loop_closures": 3,
     "used_raw_poses_as_is": false,
-    "sheet_fixes": 1,
-    "correction_applied": false
+    "sheet_fixes": 44,
+    "correction_applied": true
   }
 }

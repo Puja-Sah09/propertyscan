@@ -80,19 +80,32 @@ def compare_magicplan(plan_path: Path, csv_path: Path) -> int:
 
 
 def _magicplan_columns(header: dict) -> tuple[str | None, str | None]:
+    """Room name and interior floor area from a Statistics export.
+
+    magicplan's room row has ``area`` plus ``area_without_walls`` and
+    ``area_with_walls``. The plan polygon is the interior, so the column
+    without the walls is the one that matches. A header that only says
+    ``area`` is used as it stands.
+    """
     keys = list(header.keys())
     folded = {k: " ".join(k.lower().replace("²", "2").replace("_", " ").split()) for k in keys}
 
-    def pick(needles: tuple[str, ...], reject: tuple[str, ...] = ()) -> str | None:
-        for key, text in folded.items():
-            if any(r in text for r in reject):
-                continue
-            if any(n in text for n in needles):
-                return key
+    def exact(*names: str) -> str | None:
+        for name in names:
+            for key, text in folded.items():
+                if text == name:
+                    return key
         return None
 
-    area = pick(("floor area", "area m2", "area (m2)", "area"), reject=("ceiling", "wall", "volume"))
-    name = pick(("room name", "room", "name", "space"), reject=("area",))
+    area = exact("area without walls", "floor area", "area m2", "area (m2)", "area")
+    if area is None:
+        for key, text in folded.items():
+            if any(r in text for r in ("ceiling", "wall", "volume")):
+                continue
+            if "area" in text:
+                area = key
+                break
+    name = exact("room name", "name", "room", "space")
     return name, area
 
 

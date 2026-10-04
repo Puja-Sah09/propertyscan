@@ -35,7 +35,6 @@ def run_benchmark(out: Path) -> int:
         make_intrinsics,
         photo_views,
         render,
-        VIDEO_FOV_DEG,
         video_shots,
     )
 
@@ -200,7 +199,7 @@ def _video(bench: Path, gt: dict, video_shots, render, look_at, make_intrinsics)
         root = bench / "video"
         frames = root / "frames"
         frames.mkdir(parents=True, exist_ok=True)
-        k = make_intrinsics(320, 240, fov_deg=VIDEO_FOV_DEG)
+        k = make_intrinsics(960, 720)
         meta = {
             "tier": "video",
             "device": "synthetic-raycast",
@@ -210,7 +209,7 @@ def _video(bench: Path, gt: dict, video_shots, render, look_at, make_intrinsics)
         shots = video_shots(0.0)
         for i, (eye, tgt) in enumerate(shots):
             pose = look_at(eye, tgt)
-            _depth, rgb = render(pose[:3, :3], pose[:3, 3], k, 320, 240, seed=i)
+            _depth, rgb = render(pose[:3, :3], pose[:3, 3], k, 960, 720, seed=i)
             cv2.imwrite(str(frames / f"{i:04d}.jpg"), rgb)
         from propertyscan.video import run_video
 

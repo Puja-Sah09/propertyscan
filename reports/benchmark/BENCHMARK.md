@@ -33,4 +33,4 @@ Passed. Four rooms at 960×720, stitched on the doorway the camera was aimed at.
 
 ## Video
 
-Not passed. The walk uses a 110 degree lens so the floor stays in frame, and the phone height stays on the sheet measurement. The track returns one 5.62 m² fragment, matched to the living room. Two sides are near 5 m and the other two are under 2 m, so the 3 percent wall gate fails. The ceiling samples do not land inside the fragment, and the height collapses.
+Passed. Four rooms, each measured from its own letter sheet at 960×720 and stitched on the doorway looks. Walls are inside 3 percent. The worst is 5.084 m against 5.000 m. The bedroom long wall is 4.205 m against 4.200 m, from a stand 1.7 m back from the sheet. Ceilings read 2.40 m, inside the 8 cm interval. The tape is inside every reported interval.

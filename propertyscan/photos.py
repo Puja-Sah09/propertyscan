@@ -76,7 +76,7 @@ def run_photos(capture: dict) -> dict:
     }
 
 
-def _room_from_images(images: list[tuple[str, np.ndarray]], k: np.ndarray):
+def _room_from_images(images: list[tuple[str, np.ndarray]], k: np.ndarray, prefer_extent: bool = False):
     clouds = []
     ceilings = []
     used = []
@@ -101,7 +101,7 @@ def _room_from_images(images: list[tuple[str, np.ndarray]], k: np.ndarray):
         for view in used:
             ceilings.extend(measure_ceiling(view["image"], view["R"], view["t"], k, lines))
     ceiling = float(np.median(ceilings)) if ceilings else 2.40
-    room = _room_from_lines(fitted, xy, ceiling)
+    room = _room_from_lines(fitted, xy, ceiling, prefer_extent=prefer_extent)
     return room, used
 
 
@@ -185,7 +185,9 @@ def _mode_band(xy: np.ndarray, axis: int, pos: float | None) -> float | None:
     return float(np.median(band))
 
 
-def _room_from_lines(lines: list[Line2D], support_xy: np.ndarray, ceiling: float) -> RoomGeom | None:
+def _room_from_lines(
+    lines: list[Line2D], support_xy: np.ndarray, ceiling: float, prefer_extent: bool = False
+) -> RoomGeom | None:
     """Rectangle in the sheet frame.
 
     The sheet's long edge is parallel to a wall, so the walls are the sheet
@@ -238,6 +240,13 @@ def _room_from_lines(lines: list[Line2D], support_xy: np.ndarray, ceiling: float
     x1 = _mode_band(support_xy, 0, x1)
     y0 = _mode_band(support_xy, 1, y0)
     y1 = _mode_band(support_xy, 1, y1)
+    # A head-on wall is pitched outward by a small sheet error. The ends of the
+    # two walls that meet it are closer to the camera and a better corner.
+    if prefer_extent:
+        x0 = _outside_to_end(x0, x_ext, high=False)
+        x1 = _outside_to_end(x1, x_ext, high=True)
+        y0 = _outside_to_end(y0, y_ext, high=False)
+        y1 = _outside_to_end(y1, y_ext, high=True)
     if None in (x0, x1, y0, y1):
         return None
     if x1 - x0 < 0.7 or y1 - y0 < 0.7 or x1 - x0 > 12 or y1 - y0 > 12:
@@ -262,6 +271,17 @@ def _room_from_lines(lines: list[Line2D], support_xy: np.ndarray, ceiling: float
         for g0, g1 in ln.gaps:
             openings.append(Opening(g0, g1, "door", i))
     return RoomGeom(poly, edges, openings, 0.0, ceiling, 0)
+
+
+def _outside_to_end(pos: float | None, ext: tuple[float, float] | None, high: bool) -> float | None:
+    if pos is None or ext is None:
+        return pos
+    end = ext[1] if high else ext[0]
+    if high and end + 0.03 < pos <= end + 0.30:
+        return float(end)
+    if not high and end - 0.30 <= pos < end - 0.03:
+        return float(end)
+    return pos
 
 
 def _edge_op(room: RoomGeom, edge: int):

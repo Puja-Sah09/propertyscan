@@ -1225,80 +1225,261 @@
   },
   "video": {
     "tier": "video",
-    "passed": false,
-    "rooms_matched": 1,
+    "passed": true,
+    "rooms_matched": 4,
     "rooms_gt": 4,
-    "drift_method": "sheet_pnp_ground_plane_rejected",
+    "drift_method": "sheet_pnp_room_stitch",
     "drift_automatic_fail": false,
     "openings": {
-      "counted": 2,
-      "within_gate": 0,
+      "counted": 14,
+      "within_gate": 4,
       "matched": [
         {
           "room": "living",
           "gt_m": 0.8,
-          "est_m": 0.8588,
-          "err_m": 0.0588,
+          "est_m": 0.8,
+          "err_m": 0.0,
+          "ok": true
+        },
+        {
+          "room": "hall",
+          "gt_m": 0.8,
+          "est_m": 0.8,
+          "err_m": 0.0,
+          "ok": true
+        },
+        {
+          "room": "hall",
+          "gt_m": 0.8,
+          "est_m": 0.8126,
+          "err_m": 0.0126,
+          "ok": true
+        },
+        {
+          "room": "kitchen",
+          "gt_m": 0.9,
+          "est_m": 0.9154,
+          "err_m": 0.0154,
+          "ok": true
+        },
+        {
+          "room": "bedroom",
+          "gt_m": 0.8,
+          "est_m": 0.8494,
+          "err_m": 0.0494,
           "ok": false
         }
       ],
-      "misses": [],
+      "misses": [
+        {
+          "room": "hall",
+          "gt_m": 0.9
+        }
+      ],
       "phantoms": [
         {
           "room": "living",
-          "est_m": 5.0254
+          "est_m": 0.92
+        },
+        {
+          "room": "living",
+          "est_m": 0.58
+        },
+        {
+          "room": "living",
+          "est_m": 0.94
+        },
+        {
+          "room": "living",
+          "est_m": 0.9631
+        },
+        {
+          "room": "living",
+          "est_m": 0.66
+        },
+        {
+          "room": "hall",
+          "est_m": 0.6
+        },
+        {
+          "room": "hall",
+          "est_m": 0.6
+        },
+        {
+          "room": "hall",
+          "est_m": 0.5831
         }
       ]
     },
-    "opening_rate": 0.0,
+    "opening_rate": 0.2857,
     "ceilings": {
-      "n": 1,
-      "worst_abs_m": 2.44,
+      "n": 4,
+      "worst_abs_m": 0.07,
       "rows": [
         {
           "room": "living",
           "gt_m": 2.44,
-          "est_m": 0.0,
-          "err_m": 2.44,
+          "est_m": 2.4,
+          "err_m": 0.04,
           "ok": false,
-          "gt_inside_ci": false
+          "gt_inside_ci": true
+        },
+        {
+          "room": "hall",
+          "gt_m": 2.44,
+          "est_m": 2.4,
+          "err_m": 0.04,
+          "ok": false,
+          "gt_inside_ci": true
+        },
+        {
+          "room": "kitchen",
+          "gt_m": 2.44,
+          "est_m": 2.4,
+          "err_m": 0.04,
+          "ok": false,
+          "gt_inside_ci": true
+        },
+        {
+          "room": "bedroom",
+          "gt_m": 2.47,
+          "est_m": 2.4,
+          "err_m": 0.07,
+          "ok": false,
+          "gt_inside_ci": true
         }
       ]
     },
     "walls": {
-      "all_within": false,
+      "all_within": true,
       "rows": [
         {
           "room": "living",
           "gt_m": 4.0,
-          "est_m": 4.9057,
-          "err_m": 0.9057,
+          "est_m": 3.9993,
+          "err_m": 0.0007,
           "limit_m": 0.12,
-          "ok": false
+          "ok": true
         },
         {
           "room": "living",
           "gt_m": 4.0,
-          "est_m": 5.0254,
-          "err_m": 1.0254,
+          "est_m": 3.9993,
+          "err_m": 0.0007,
           "limit_m": 0.12,
-          "ok": false
+          "ok": true
         },
         {
           "room": "living",
           "gt_m": 5.0,
-          "est_m": 1.7889,
-          "err_m": 3.2111,
+          "est_m": 5.0836,
+          "err_m": 0.0836,
           "limit_m": 0.15,
-          "ok": false
+          "ok": true
         },
         {
           "room": "living",
           "gt_m": 5.0,
-          "est_m": 0.8588,
-          "err_m": 4.1412,
+          "est_m": 5.0836,
+          "err_m": 0.0836,
           "limit_m": 0.15,
-          "ok": false
+          "ok": true
+        },
+        {
+          "room": "hall",
+          "gt_m": 1.2000000000000002,
+          "est_m": 1.198,
+          "err_m": 0.002,
+          "limit_m": 0.036,
+          "ok": true
+        },
+        {
+          "room": "hall",
+          "gt_m": 1.2000000000000002,
+          "est_m": 1.198,
+          "err_m": 0.002,
+          "limit_m": 0.036,
+          "ok": true
+        },
+        {
+          "room": "hall",
+          "gt_m": 4.0,
+          "est_m": 4.0753,
+          "err_m": 0.0753,
+          "limit_m": 0.12,
+          "ok": true
+        },
+        {
+          "room": "hall",
+          "gt_m": 4.0,
+          "est_m": 4.0753,
+          "err_m": 0.0753,
+          "limit_m": 0.12,
+          "ok": true
+        },
+        {
+          "room": "kitchen",
+          "gt_m": 3.499999999999999,
+          "est_m": 3.5311,
+          "err_m": 0.0311,
+          "limit_m": 0.105,
+          "ok": true
+        },
+        {
+          "room": "kitchen",
+          "gt_m": 3.499999999999999,
+          "est_m": 3.5311,
+          "err_m": 0.0311,
+          "limit_m": 0.105,
+          "ok": true
+        },
+        {
+          "room": "kitchen",
+          "gt_m": 3.5,
+          "est_m": 3.5413,
+          "err_m": 0.0413,
+          "limit_m": 0.105,
+          "ok": true
+        },
+        {
+          "room": "kitchen",
+          "gt_m": 3.5,
+          "est_m": 3.5413,
+          "err_m": 0.0413,
+          "limit_m": 0.105,
+          "ok": true
+        },
+        {
+          "room": "bedroom",
+          "gt_m": 3.8000000000000007,
+          "est_m": 3.8003,
+          "err_m": 0.0003,
+          "limit_m": 0.114,
+          "ok": true
+        },
+        {
+          "room": "bedroom",
+          "gt_m": 3.8000000000000007,
+          "est_m": 3.8003,
+          "err_m": 0.0003,
+          "limit_m": 0.114,
+          "ok": true
+        },
+        {
+          "room": "bedroom",
+          "gt_m": 4.2,
+          "est_m": 4.2048,
+          "err_m": 0.0048,
+          "limit_m": 0.126,
+          "ok": true
+        },
+        {
+          "room": "bedroom",
+          "gt_m": 4.2,
+          "est_m": 4.2048,
+          "err_m": 0.0048,
+          "limit_m": 0.126,
+          "ok": true
         }
       ]
     },
@@ -1307,58 +1488,35 @@
         {
           "room": "living",
           "gt_m2": 20.0,
-          "est_m2": 5.624,
-          "rel": 0.7188
+          "est_m2": 20.3309,
+          "rel": 0.0165
+        },
+        {
+          "room": "hall",
+          "gt_m2": 4.8,
+          "est_m2": 4.8823,
+          "rel": 0.0171
+        },
+        {
+          "room": "kitchen",
+          "gt_m2": 12.25,
+          "est_m2": 12.5048,
+          "rel": 0.0208
+        },
+        {
+          "room": "bedroom",
+          "gt_m2": 15.96,
+          "est_m2": 15.9792,
+          "rel": 0.0012
         }
       ]
     },
     "calibration": {
-      "all_inside": false,
-      "n": 7,
-      "failed": [
-        {
-          "room": "living",
-          "kind": "ceiling",
-          "gt": 2.44,
-          "ci95": [
-            -0.08,
-            0.08
-          ],
-          "ok": false
-        },
-        {
-          "room": "living",
-          "kind": "area",
-          "gt": 20.0,
-          "ci95": [
-            5.2866,
-            5.9614
-          ],
-          "ok": false
-        },
-        {
-          "room": "living",
-          "kind": "wall",
-          "gt": 4.0,
-          "ci95": [
-            1.7352,
-            1.8425
-          ],
-          "ok": false
-        },
-        {
-          "room": "living",
-          "kind": "wall",
-          "gt": 4.0,
-          "ci95": [
-            0.8331,
-            0.8846
-          ],
-          "ok": false
-        }
-      ]
+      "all_inside": true,
+      "n": 29,
+      "failed": []
     },
-    "adjacency_ok": false,
+    "adjacency_ok": true,
     "overlap_m2": 0.0
   }
 }

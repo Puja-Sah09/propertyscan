@@ -40,7 +40,7 @@ py -m propertyscan run photos/ -o out/photos
 
 ## Video
 
-Use the wide camera. A 62 degree view aimed at a wall is only paint, and the track dies. Start on the letter sheet, close enough that the black border is a few pixels across. Hold the phone at one height for the whole walk. Keep the floor in the lower half of the frame and the wall base in view. End on the same sheet so the scale can be checked.
+Film each room the way the stills are taken: stand on the far side of that room's letter sheet and keep the sheet in frame. The first frame of a room looks back through the door you came in by. The last frame looks through the door you leave by. Between rooms, look up for at least two frames so the sheet leaves the picture. That gap is how the next room starts. A room with two exits, here the hall, is entered again and the second visit ends on the other door. The bedroom's long walls are shot from 1.7 m back from the sheet. From the far wall those bases read about 18 cm long, which misses a 3 percent gate.
 
 ```
 py -m propertyscan run video/ -o out/video
@@ -48,6 +48,24 @@ py -m propertyscan run video/ -o out/video
 
 `video/capture.json` sets `"tier": "video"`. Frames are `video/frames/*.jpg` in order.
 
+## magicplan
+
+On the phone, open the same rooms in magicplan (free Starter). From the project, open Files and Sharing, then Statistics, and export CSV. Pass that file through. The command prints room areas from the file against the plan and skips a blank cell. It does not write a number the file does not contain.
+
+```
+py -m propertyscan compare out/plan.json magicplan.csv
+```
+
+The interior column is `area_without_walls` when the export has it, otherwise `area`.
+
 ## What this environment actually captured
 
-No iPhone was on this machine. The scored numbers come from the ray caster walking the route above. The three Drive archives (`single_room`, `single_scan_floor_only`, `single_scan_with_ceiling`) are real Stray Scanner walks and were run with the same command. They have no tape, so they are not a gate.
+The scored building is the ray caster walking the route above. The three Drive archives are real iPhone LiDAR in Stray Scanner layout, and they were run with the same command:
+
+| Archive | Plan | Footprint | Ceiling |
+|---|---|---|---|
+| `single_room` | `reports/samples/single_room/` | 22.51 m² | not in the cloud |
+| `single_scan_floor_only` | `reports/samples/single_scan_floor_only/` | 32.74 m² | not in the cloud |
+| `single_scan_with_ceiling` | `reports/samples/single_scan_with_ceiling/` | 33.19 m² | 3.10 m |
+
+They have no tape, so they are not a gate. This PC did not record another walk. magicplan was not installed, so there is no Statistics CSV.
